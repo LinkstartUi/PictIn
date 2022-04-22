@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&family=Zen+Tokyo+Zoo&display=swap");
+
+html {
+    min-height: 100%;
+    overflow-y: scroll; 
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+
+    
+  }
+  body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  p{
+    color: rgb(255, 255, 255);
+  }
+  span{
+    color: #a400b9;
+  }
+ 
+    /* img {
+      float: left; 
+      width:  100px;
+      height: 100px; */
+    /* background: cover;  */
+    /* object-fit: cover;  */
+  } 
+  
+  h1 {
+    color: #ffffff;
+    font-size: 20em;
+    /* font-family: 'Dancing Script', cursive; */
+    letter-spacing:normal;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: #ffffff;
+    animation: animate 3s infinite linear;
+  }
+
+  .grid-container {
+    columns: 5 100px;
+    column-gap: 1.5rem;
+    width: 90%;
+
+    margin: 0 auto;
+  }
+  .grid-container div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px rgb(138, 38, 129);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div:hover img {
+    filter: grayscale(0);
+  }
+  .grid-container div:hover {
+    border-color: #ffffff;
+  }
+  .grid-container div img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+  }
+
+
+/* ===================================================================================================== */
+
+
+.copy {
+
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    animation: animate 1.0s ease-in-out infinite alternate;
+    }
+    
+    @keyframes animate {
+    from {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 10px #22ebff, 0 0 20px #f0f, 0 0 30px #ff0, 0 0 40px #225, 0 0 50px #0ff;
+        }
+        to {
+            color: #7b0094;
+            text-shadow: 0 0 10px #00FFFF, 0 0 20px #CEF6F5, 0 0 30px #FBF2EF, 0 0 40px #FACC2E, 0 0 50px #A9F5BC;
+        }}
+
+
+.navbar{
+    position: fixed;
+    top: 93%;
+    left: 0px;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 1px 10px rgb(255, 255, 255);
+}
+.navbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar a:hover{
+    background-color: #7c7a7a;
+}
+.side-menu{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    /* opacity: 0.9; */
+    overflow-x: hidden;
+
+    transition: 0.2s;
+}
+.side-menu a{
+    margin: 0px;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    color: #a400b9;
+    transition: 0.4s;
+}
+.side-menu a:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+.side-menu .btn-close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 55px;
+}
+#main{
+    padding: 10px;
+    overflow: hidden;
+    margin-top:  0px;
+}
+
+/* Logo Menu ================== */
+.logo{
+    justify-content: center;
+    justify-content: flex-end;
+}
+/* ============================ */
+
+/*  =============*/
+.copy{
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    text-align: center;
+}
+
+
